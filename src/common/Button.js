@@ -1,22 +1,22 @@
-import './Button.css'
+import './Button.css';
 
 const Button = (props) => {
 
-    const btClick = () => {
-        console.log('props value',props)
-    }
+    const { btName, btFun} = props;
+    
 
     return (
        <div>
          
-         <button className=".bt-cal" onClick={btClick}>
-            {props.btName}
+         <button className="bt" onClick= {btFun} > 
+         {btName}
+            
             </button>
 
        </div> 
 
     )
-}
 
+};       
 
 export default Button;
